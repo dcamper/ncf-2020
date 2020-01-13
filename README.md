@@ -2,7 +2,7 @@
 http://ec2-18-218-112-168.us-east-2.compute.amazonaws.com:8010
 
 ### ECL training containing six short videos
-https://www.youtube.com/watch? v=Lk78BCCtM-0
+https://www.youtube.com/watch?v=Lk78BCCtM-0
 
 ### ECL Language Reference
 https://d2wulyp08c6njk.cloudfront.net/releases/CE-Candidate-7.6.16/docs/EN_US/ECLLanguageReference_EN_US-7.6.16-1.pdf
