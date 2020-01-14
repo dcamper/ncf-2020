@@ -27,10 +27,10 @@ appendedData := PROJECT
                 AppendedRec,
                 startedDate := Std.Date.FromStringToDate(LEFT.EffectiveDate, '%Y%m%d');
                 stoppedDate := Std.Date.FromStringToDate(LEFT.DiscontinueDate, '%Y%m%d');
-                SELF.schedule_duration_in_days := Std.Date.DaysBetween(startedDate, stoppedDate),
+                SELF.schedule_duration_in_days := Std.Date.DaysBetween(startedDate, stoppedDate) + 1,
                 // Note the substring operation, and casting of a string to an unsigned integer
-                SELF.depart_minutes_after_midnight := ((UNSIGNED1)LEFT.DepartTimePassenger[1..2] * 60 + (UNSIGNED1)LEFT.DepartTimePassenger[2..4]),
-                SELF.arrive_minutes_after_midnight := ((UNSIGNED1)LEFT.ArriveTimePassenger[1..2] * 60 + (UNSIGNED1)LEFT.ArriveTimePassenger[2..4]),
+                SELF.depart_minutes_after_midnight := ((UNSIGNED1)LEFT.DepartTimePassenger[1..2] * 60 + (UNSIGNED1)LEFT.DepartTimePassenger[3..4]),
+                SELF.arrive_minutes_after_midnight := ((UNSIGNED1)LEFT.ArriveTimePassenger[1..2] * 60 + (UNSIGNED1)LEFT.ArriveTimePassenger[3..4]),
                 // TODO: Assign values to the new fields
                 SELF := LEFT
             )
