@@ -50,6 +50,8 @@ sortedByCarrierName := SORT(carrierCodeAndName, carrier_name);
 // Output the results in the workunit
 OUTPUT(sortedByCarrierName, NAMED('sortedByCarrierName'), ALL);
 
+
+
 /******************************************************************************
  * TODO
  *
@@ -58,6 +60,6 @@ OUTPUT(sortedByCarrierName, NAMED('sortedByCarrierName'), ALL);
  *      DepartCountryCode (see Share.Countries)
  *      DepartStationCode (see Share.Airports)
  *
- * You can either insert your new code here (be sure to uses unique attribute
+ * You can either insert your new code here (be sure to use unique attribute
  * names!) or create a new file.
  ******************************************************************************/
